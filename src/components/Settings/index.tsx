@@ -157,6 +157,7 @@ const langNameMap = {
   'zh-CN': 'Chinese (PRC)',
   'zh-TW': 'Chinese (Taiwan)',
   'hi': 'Hindi',
+  'tr-TR': 'Türkçe',
 };
 
 function LanguageSelect({handleClick}: {handleClick: () => void}) {
@@ -193,6 +194,7 @@ function getLangOptions() {
       {code: 'zh-CN', color: '#315CF5', iconName: 'zh-CN.svg' },
       {code: 'zh-TW', color: '#315CF5', iconName: 'zh-TW.svg' },
       {code: 'hi', color: '#315CF5', iconName: 'hi.svg'},
+      {code: 'tr-TR', color: '#315CF5', iconName: 'tr-TR.svg'},
     ];
 
   const selectedLangCode = window.localStorage.getItem('i18nextLng');
